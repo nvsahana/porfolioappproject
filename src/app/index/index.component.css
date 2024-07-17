@@ -4,9 +4,7 @@
 .indexdiv {
     width: 100%;
 }
-.indexdiv {
 
-}
 
 .mainindexdiv {
     display: grid;
@@ -26,4 +24,23 @@
     object-fit: contain;
     width: 100%;
     height: 100%;
+}
+.temporary {
+    padding-top: 2em;
+    padding-left: 2em;
+}
+.contentcontainer {
+    padding-left: 2em;
+    width: 60%;
+}
+.contentcontainer p {
+    font-size: 1em;
+}
+.content a{
+    text-decoration: none;
+    color: rgba(210, 176, 218, 0.892);
+}
+
+.content a:hover {
+    color: white;
 }

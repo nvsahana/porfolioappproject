@@ -16,16 +16,37 @@
     grid-template-columns: 50% 50%;
 }
 .name {
-    padding-left: 1em;
+    padding-left: 2em;
 }
 
 .navlistitems {
     display: flex;
     justify-content: space-around;
-    padding: 2em;
+    padding: 1.5em;
     flex-direction: row;
     flex-wrap: wrap;
 }
+.navlistitems button {
+    font-family: alata, Helvetica;
+    border: none;
+    background: none;
+    color: inherit; /* inherit color from parent */
+    font: inherit;  /* inherit font properties from parent */
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    cursor: pointer;
+    text-decoration: none;
+    color: #E8E8E8;
+}
+
+.navlistitems button:hover {
+    border: 0.5px solid #b3a3c6; /* Change border color as needed */
+    border-radius: 1em;
+    background-color: #b3a3c6;
+    color: black;
+  }
 
 .navlistitems a {
     text-decoration: none;
