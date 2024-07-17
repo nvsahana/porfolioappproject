@@ -1,3 +1,4 @@
+
 .navbarcontainer {
     position: absolute;
     padding: 0;
@@ -12,7 +13,7 @@
 
 .navlist {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 50% 50%;
 }
 .name {
     padding-left: 1em;
@@ -21,11 +22,12 @@
 .navlistitems {
     display: flex;
     justify-content: space-around;
-    padding: 1em;
+    padding: 2em;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
 .navlistitems a {
     text-decoration: none;
+    font-family: alata, Helvetica;
 }
