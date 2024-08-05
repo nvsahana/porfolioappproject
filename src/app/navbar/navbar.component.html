@@ -2,22 +2,23 @@
     <div class="maindiv">
         <div class="navlist">
             <div class="name navlistgriditem">
-                <h1>SAHANA NARASIPURA VASUDEVARAO</h1>
+                <h1 *ngIf="!isPhoneviewed">SAHANA NARASIPURA VASUDEVARAO</h1>
+                <h5 *ngIf="isPhoneviewed">SAHANA NARASIPURA VASUDEVARAO</h5>
             </div>
                 <div class="responsivemain" *ngIf="isPhoneviewed">
                 <div *ngIf = "isShow">
                     <div class="togglehandler responsivenavbarcontainer">
                         <div class="navlink responsivenavlink">
-                            <button type="button">About</button>
+                            <button type="button" (click)="goToAbout()">About</button>
                         </div>
                         <div class="navlink responsivenavlink">
-                            <button type="button">Resume</button>
+                            <button type="button" (click)="goToResume()">Resume</button>
                         </div>
                         <div class="navlink responsivenavlink">
-                            <button type="button">Publications</button>
+                            <button type="button" (click)="goToPublications()">Publications</button>
                         </div>
                         <div class="navlink responsivenavlink">
-                            <button type="button">Contact</button>
+                            <button type="button" (click)="goToContact()">Contact</button>
                         </div>
                     </div>
                 </div>
@@ -27,16 +28,16 @@
              </div>
             <div class="navlistitems navlistgriditem" *ngIf="!isPhoneviewed">
                 <div class="navlink">
-                    <button type="button">About</button>
+                    <button type="button" (click)="goToAbout()">About</button>
                 </div>
                 <div class="navlink">
-                    <button type="button">Resume</button>
+                    <button type="button" (click)="goToResume()">Resume</button>
                 </div>
                 <div class="navlink">
-                    <button type="button">Publications</button>
+                    <button type="button" (click)="goToPublications()">Publications</button>
                 </div>
                 <div class="navlink">
-                    <button type="button">Contact</button>
+                    <button type="button" (click)="goToContact()">Contact</button>
                 </div>
             </div>
         </div>
