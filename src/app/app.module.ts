@@ -6,20 +6,27 @@ import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MatButtonToggleModule }  from "@angular/material/button-toggle"; 
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations"; 
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+     MatButtonToggleModule, 
+    BrowserAnimationsModule, 
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })

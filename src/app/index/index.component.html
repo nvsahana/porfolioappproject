@@ -1,7 +1,7 @@
 <div class="navbarpart">
     <app-navbar></app-navbar>
 </div>
-    <div class="indexdiv">
+    <div class="indexdiv" *ngIf="!isPhoneviewed">
         <div class="mainindexdiv">
             <div class="mainindexitem indexleftdiv">
                 <div class="leftitemimage">
@@ -10,6 +10,25 @@
                 
             </div>
             <div class-="mainindexitem indexrightdiv">
+                <p class="temporary" style="font-weight: bolder;">Full-Stack</p>
+                <div class="contentcontainer">
+                    <p class="content">I'm a Full Stack Developer with a Master’s in Computer Science from Syracuse University. I spend my days wrestling with Angular, HTML, CSS, Spring Boot, and AWS, and my nights diving into the wonders of Natural Language Processing. 
+                        <br><br>My journey has taken me through exciting roles at Bosch and Toyz Electronics, where I’ve developed robust applications and a penchant for debugging.
+                        <br><br>When I'm not coding, I'm passionate about promoting diversity and inclusivity, believing that a collaborative and respectful environment brings out the best in everyone. Let's connect and explore my projects on <a href="https://github.com/nvsahana">GitHub</a>. 
+                        You bring the requirements, I'll bring the code! </p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="indexdiv responsiveindexdiv" *ngIf="isPhoneviewed">
+        <div class="mainindexdiv responsivemainindexdiv">
+            <div class="mainindexitem indexleftdiv responsiveindexleftdiv">
+                <div class="leftitemimage responsiveimage">
+                    <img src="./assets/porgrammerimage.webp" alt="sahana.jpg" class="image">
+                </div>
+                
+            </div>
+            <div class-="mainindexitem indexrightdiv responsiveindexrightdiv">
                 <p class="temporary" style="font-weight: bolder;">Full-Stack</p>
                 <div class="contentcontainer">
                     <p class="content">I'm a Full Stack Developer with a Master’s in Computer Science from Syracuse University. I spend my days wrestling with Angular, HTML, CSS, Spring Boot, and AWS, and my nights diving into the wonders of Natural Language Processing. 

@@ -4,7 +4,28 @@
             <div class="name navlistgriditem">
                 <h1>SAHANA NARASIPURA VASUDEVARAO</h1>
             </div>
-            <div class="navlistitems navlistgriditem">
+                <div class="responsivemain" *ngIf="isPhoneviewed">
+                <div *ngIf = "isShow">
+                    <div class="togglehandler responsivenavbarcontainer">
+                        <div class="navlink">
+                            <button type="button">About</button>
+                        </div>
+                        <div class="navlink">
+                            <button type="button">Resume</button>
+                        </div>
+                        <div class="navlink">
+                            <button type="button">Publications</button>
+                        </div>
+                        <div class="navlink">
+                            <button type="button">Contact</button>
+                        </div>
+                    </div>
+                </div>
+                <button (click) = "toggleDisplay()">
+                    <img src="./assets/navbar2.png" alt="navbar">
+                </button>
+             </div>
+            <div class="navlistitems navlistgriditem" *ngIf="!isPhoneviewed">
                 <div class="navlink">
                     <button type="button">About</button>
                 </div>

@@ -44,3 +44,24 @@
 .content a:hover {
     color: white;
 }
+
+
+
+
+.responsiveindexdiv {
+    width: 100%;
+}
+.responsivemainindexdiv {
+    display: flex !important;
+    flex-direction: column;
+}
+.responsiveindexleftdiv {
+    height: 25em;
+}
+.responsiveindexrightdiv {
+    margin-top: 0;
+}
+.responsiveimage img{
+    width: 100%;
+    height: 50% !important;
+}
