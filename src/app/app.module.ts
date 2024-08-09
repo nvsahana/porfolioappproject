@@ -8,7 +8,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatButtonToggleModule }  from "@angular/material/button-toggle"; 
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations"; 
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { AboutComponent } from './about/about.component';
+import { ResumeComponent } from './resume/resume.component'; 
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     IndexComponent,
     NavbarComponent,
     FooterComponent,
+    AboutComponent,
+    ResumeComponent,
     
   ],
   imports: [

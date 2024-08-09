@@ -41,6 +41,7 @@ export class NavbarComponent {
   }
   goToResume():void {
     console.log("Clicked Resume");
+    this.router.navigate(['resume']);
   }
   goToPublications():void {
     console.log("Clicked Publications");
