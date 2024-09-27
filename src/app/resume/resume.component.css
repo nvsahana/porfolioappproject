@@ -1,0 +1,20 @@
+.maincontainer {
+    margin: auto;
+    width: 80%;
+    border: 3px;
+    padding: 10px;
+}
+.maincontainer h1 {
+    text-align: center;
+}
+.underheading p {
+    text-align: center;
+}
+.collegename, .experienceHeading, .projectheading, .activityheading {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.positionName {
+    font-weight: bold;
+}
